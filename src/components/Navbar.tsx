@@ -1,15 +1,23 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import MobileMenu from './MobileMenu';
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li>Navbar</li>
-        <li>{/* <Link to="/">Home</Link> */}</li>
-        <li>{/* <Link to="/about">About</Link> */}</li>
-      </ul>
-    </nav>
-  )
-}
+    <div className="h-24 flex items-center justify-between">
+      {/* LEFT */}
+      <div className="">
+        <Link href="/" className="font-bold text-xl text-blue-600">
+          X Social
+        </Link>
+      </div>
+      {/* CENTER */}
+      <div className="hidden"></div>
+      {/* RIGHT */}
+      <div className="">
+        <MobileMenu />
+      </div>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;
