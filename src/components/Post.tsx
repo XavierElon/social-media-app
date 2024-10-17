@@ -14,7 +14,7 @@ const Post = () => {
             height={48}
             className="w-12 h-12 object-cover rounded-full"
           />
-          <span className="font-medium">Jack McBride</span>
+          <span className="font-medium">Elon Musk</span>
         </div>
         <Image src="/more.png" width={16} height={16} alt="" />
       </div>
