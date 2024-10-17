@@ -1,9 +1,13 @@
-const RightMenu = () => {
+import Ad from './Ad';
+import Birthdays from './Birthdays';
+import FriendRequests from './FriendRequests';
+
+const RightMenu = ({ userId }: { userId?: string }) => {
   return (
-    <div className="flex gap-6">
-      <div className="hidden xl:block w-[20%]"></div>
-      <div className="hidden lg:w-[70%] xl:w-[50%]"></div>
-      <div className="hidden lg:block w-[30%]"></div>
+    <div className="flex flex-col gap-6">
+      <FriendRequests />
+      <Birthdays />
+      <Ad size="md" />
     </div>
   );
 };
