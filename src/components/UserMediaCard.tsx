@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const UserMediaCard = ({ userId }: { userId: string }) => {
   return (
@@ -9,6 +10,73 @@ const UserMediaCard = ({ userId }: { userId: string }) => {
         <Link href="/" className="text-blue-500 text-sm">
           See All
         </Link>
+      </div>
+      {/* BOTTOM */}
+      <div className="flex gap-4 justify-between flex-wrap">
+        <div className="relative w-1/5 h-24">
+          <Image
+            src="https://www.cyberpunk.net/build/images/home12/cover-1920-bd460362.jpg"
+            alt=""
+            fill
+            className="object-cover rounded-md"
+          />
+        </div>
+        <div className="relative w-1/5 h-24">
+          <Image
+            src="https://www.cyberpunk.net/build/images/home12/cover-1920-bd460362.jpg"
+            alt=""
+            fill
+            className="object-cover rounded-md"
+          />
+        </div>
+        <div className="relative w-1/5 h-24">
+          <Image
+            src="https://www.cyberpunk.net/build/images/home12/cover-1920-bd460362.jpg"
+            alt=""
+            fill
+            className="object-cover rounded-md"
+          />
+        </div>
+        <div className="relative w-1/5 h-24">
+          <Image
+            src="https://www.cyberpunk.net/build/images/home12/cover-1920-bd460362.jpg"
+            alt=""
+            fill
+            className="object-cover rounded-md"
+          />
+        </div>
+        <div className="relative w-1/5 h-24">
+          <Image
+            src="https://www.cyberpunk.net/build/images/home12/cover-1920-bd460362.jpg"
+            alt=""
+            fill
+            className="object-cover rounded-md"
+          />
+        </div>
+        <div className="relative w-1/5 h-24">
+          <Image
+            src="https://www.cyberpunk.net/build/images/home12/cover-1920-bd460362.jpg"
+            alt=""
+            fill
+            className="object-cover rounded-md"
+          />
+        </div>
+        <div className="relative w-1/5 h-24">
+          <Image
+            src="https://www.cyberpunk.net/build/images/home12/cover-1920-bd460362.jpg"
+            alt=""
+            fill
+            className="object-cover rounded-md"
+          />
+        </div>
+        <div className="relative w-1/5 h-24">
+          <Image
+            src="https://www.cyberpunk.net/build/images/home12/cover-1920-bd460362.jpg"
+            alt=""
+            fill
+            className="object-cover rounded-md"
+          />
+        </div>
       </div>
     </div>
   );
